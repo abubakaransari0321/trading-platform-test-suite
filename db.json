@@ -1,0 +1,47 @@
+{
+  "users": [
+    { "id": 1, "username": "alice", "password": "pass123" },
+    { "id": 2, "username": "bob", "password": "pass456" }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "type": "buy",
+      "symbol": "AAPL",
+      "quantity": 10,
+      "price": 175.50,
+      "timestamp": "2025-05-17T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "type": "sell",
+      "symbol": "TSLA",
+      "quantity": 5,
+      "price": 680.25,
+      "timestamp": "2025-05-17T11:00:00Z"
+    }
+  ],
+  "portfolio": [
+    {
+      "userId": 1,
+      "holdings": [
+        { "symbol": "AAPL", "quantity": 10 },
+        { "symbol": "GOOGL", "quantity": 2 }
+      ]
+    },
+    {
+      "userId": 2,
+      "holdings": [
+        { "symbol": "MSFT", "quantity": 4 }
+      ]
+    }
+  ],
+  "prices": [
+    { "symbol": "AAPL", "price": 176.75 },
+    { "symbol": "TSLA", "price": 682.00 },
+    { "symbol": "GOOGL", "price": 2850.00 },
+    { "symbol": "MSFT", "price": 320.15 }
+  ]
+}
